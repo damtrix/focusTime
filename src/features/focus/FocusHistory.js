@@ -14,12 +14,13 @@ export const FocusHistory = ({ focusHistory, onClear }) => {
 
   return (
     <>
-      <SafeAreaView style={{ flex: 1 }}>
-        <Text style={styles.title}>
-         Things we've focused on.
-          </Text>
+      <SafeAreaView style={{ flex: 1, alignItems: "center" }}>
+        
         {!!focusHistory.length && (
           <>
+          <Text style={styles.title}>
+            Things we've focused on.
+          </Text>
             <FlatList
               style={{ flex: 1 }}
               contentContainerStyle={{ flex: 1, alignItems: 'center' }}
